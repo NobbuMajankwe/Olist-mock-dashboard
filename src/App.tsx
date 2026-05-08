@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import React, { type ReactNode, useEffect, useMemo, useState } from "react";
 import Papa from "papaparse";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import {
   Area,
   AreaChart,
@@ -538,6 +539,7 @@ export default function OlistEcommerceDashboard() {
           </>
         )}
       </div>
+      <SpeedInsights />
     </div>
   );
 }
