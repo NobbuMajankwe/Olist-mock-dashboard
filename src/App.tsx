@@ -434,7 +434,7 @@ export default function OlistEcommerceDashboard() {
 
             <div className="grid gap-4 md:grid-cols-5">
               <KpiCard color="blue" icon={<Package />} title="Orders" value={kpis.totalOrders.toLocaleString()} helper="Filtered unique orders" />
-              <KpiCard color="green" icon={<TrendingUp />} title="Revenue" value={`R$ ${kpis.totalRevenue.toLocaleString(undefined, { maximumFractionDigits: 0 })}`} helper="Price + freight value" />
+              <KpiCard color="green" icon={<TrendingUp />} title="Revenue" value={`R ${kpis.totalRevenue.toLocaleString(undefined, { maximumFractionDigits: 0 })}`} helper="Price + freight value" />
               <KpiCard color="orange" icon={<RotateCcw />} title="Return Risk" value={`${kpis.returnRate.toFixed(1)}%`} helper="Low review proxy" />
               <KpiCard color="red" icon={<ShieldAlert />} title="Fraud Risk" value={`${kpis.fraudRate.toFixed(1)}%`} helper="Proxy anomaly score" />
               <KpiCard color="purple" icon={<Clock />} title="Avg Delay" value={`${kpis.avgDelay.toFixed(1)} days`} helper="Delivery delay trend" />
